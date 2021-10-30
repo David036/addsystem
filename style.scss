@@ -298,3 +298,145 @@ main {
 .section-hide {
   height: 0;
 }
+
+.btn-block {
+  background-color: #1a1c1e;
+        max-width: 210px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+}
+.child-user-list {
+  max-width: 385px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  color: #d6ddde;
+  background-color: #1a1c1e;
+  align-items: center;
+}
+
+
+@media screen and (max-width:933px) {
+header {
+  justify-content: space-around;
+}
+.nav-section {
+  display: flex;
+  justify-content: center;
+  .nav-menu {
+    width: 100%;
+  }
+}
+.user-block {
+  justify-content: space-around !important ;
+  
+}
+.parent-user-list {
+  justify-content: space-around !important;
+  font-size: 10px !important;
+}
+.list {
+  max-width: 600px !important;
+
+  justify-content: space-around !important;
+}
+.btn-2 {
+  font-size: 12px !important;
+  padding: 4px 10px !important;
+}
+.remove-btn {
+  font-size: 12px !important;
+  padding: 4px 10px !important ;
+}
+
+
+}
+  @media screen and (max-width:756px){
+    .list {
+      font-size: 8px !important;
+      max-width: 500px !important;
+    }
+    .list-nav-2 {
+      justify-content: space-around !important;
+      font-size: 8px !important;
+    }
+    .child-user-list {
+      font-size: 8px !important;
+      justify-content: space-around !important;
+    }
+  }
+  @media screen and (max-width:673px) {
+    .list {
+      max-width: 400px !important;
+      justify-content: space-around !important;
+    }
+  }
+  @media screen and (max-width:571px) {
+    .list {
+    max-width: 330px !important;
+    }
+  }
+  @media screen and (max-width:502px) {
+    .list {
+      max-width: 280px !important;
+    }
+    header {
+      flex-wrap: wrap !important;
+      justify-content: space-around !important;
+      h1 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  @media screen and (max-width:442px) {
+    .list-nav-2 {
+      max-width: 340px !important;
+      width: 100% !important;
+    }
+    .list {
+      max-width: 240px !important;
+    }
+  }
+  @media screen and (max-width:370px) {
+    .nav-menu {
+      justify-content: space-around !important;
+      li {
+        a {
+          font-size: 12px !important;
+        }
+      }
+    }
+    .list-nav-2 {
+      max-width: 200px !important;
+    }
+    .list {
+      max-width: 180px !important;
+      font-size: 5px !important;
+    }
+    .parent-user-list {
+      font-size: 8px !important;
+    }
+    .btn-block {
+      justify-content: space-around !important;
+      .btn-2 {
+        font-size: 6px !important;
+        padding: 1px 6px !important;
+        margin: 0 !important;
+      }
+      .remove-btn {
+        font-size: 6px !important;
+        padding: 1px 6px !important;
+      }
+    }
+   
+    .remove-btn {
+      font-size: 6px !important;
+      padding: 1px 6px !important;
+    }
+    .child-user-list {
+      max-width: 180px !important;
+    }
+  }
+

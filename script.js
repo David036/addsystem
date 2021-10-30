@@ -74,11 +74,7 @@ btn1.addEventListener('click',()=>{
             
         let btnBlock = document.createElement('div')
         parentUser.append(btnBlock)
-        btnBlock.style.backgroundColor = '#1a1c1e'
-        btnBlock.style.maxWidth = '210px'
-        btnBlock.style.display = 'flex'
-        btnBlock.style.width = '100%'
-        btnBlock.style.justifyContent = 'space-between'
+        btnBlock.classList.add('btn-block')
         let btn3 = document.createElement('button')  
         btn3.classList.add('btn-2')
         btn3.innerHTML = 'Add License'
@@ -138,9 +134,6 @@ btn1.addEventListener('click',()=>{
             addBlock2.append(btn4)
             inputLic.setAttribute('placeholder','Licenses')
             inputExp.setAttribute('placeholder','Expires')
-
-            
-
             addSection2.addEventListener('click',(ev1) => {
                 ev1.stopImmediatePropagation()
                 if (ev1.target == addSection2 && ev1.target != addBlock2) {
@@ -150,21 +143,13 @@ btn1.addEventListener('click',()=>{
 
             btn4.addEventListener('click',()=>{
                 if (inputLic.value !== '' && inputExp.value !== '') {
-                    addSection2.remove()
-                        
+                    addSection2.remove()          
                 let childUser = document.createElement('div')
                 childUser.classList.add('child-user')
                 parentUserSection.append(childUser)
                 let childUserList = document.createElement('ul')
                 childUser.append(childUserList)
-                childUserList.style.maxWidth = '385px'
-                childUserList.style.display = 'flex'
-                childUserList.style.justifyContent = 'space-between'
-                childUserList.style.width = '100%'
-                childUserList.style.fontSize = '16px'
-                childUserList.style.color = '#D6DDDE'
-                childUserList.style.backgroundColor = '#1a1c1e'
-                childUserList.style.alignItems = 'center'
+                childUserList.classList.add('child-user-list')
                 let listLicenses = document.createElement('li')
                 listLicenses.style.backgroundColor = '#1a1c1e'
                 childUserList.append(listLicenses)
