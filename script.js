@@ -24,6 +24,7 @@ btn1.addEventListener('click',()=>{
     btn2.innerHTML = 'Add System'
     inputName.setAttribute('placeholder','System Name')
     inputId.setAttribute('placeholder','ID')
+    inputId.setAttribute('type','number')
     addSection.addEventListener('click',(ev) => {
         ev.stopImmediatePropagation()
         if (ev.target == addSection && ev.target != addBlock) {

@@ -44,6 +44,59 @@ header nav {
           align-items: center;
 }
 
+header nav .img-1 {
+  width: 48px;
+  height: 48px;
+  background-image: url("./Images/Rectangle 15.png");
+  padding-top: 10px;
+}
+
+header nav .img-1 p {
+  background-color: #131718;
+  color: #d6ddde;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+  padding: 2px 0 2px 0;
+}
+
+header nav .img-2 {
+  width: 48px;
+  height: 48px;
+  background-image: url("./Images/Rectangle 16.png");
+  padding-top: 10px;
+}
+
+header nav .img-2 p {
+  background-color: #131718;
+  color: #d6ddde;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+  padding: 2px 0 2px 0;
+  opacity: 0.25;
+}
+
+header nav .img-3 {
+  width: 48px;
+  height: 48px;
+  background-image: url("./Images/Rectangle 17.png");
+  padding-top: 10px;
+}
+
+header nav .img-3 p {
+  background-color: #131718;
+  color: #d6ddde;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+  padding: 2px 0 2px 0;
+  opacity: 0.25;
+}
+
 header nav .btn-1 {
   font-weight: 500;
   font-size: 16px;
@@ -470,6 +523,10 @@ main .list {
     font-size: 12px !important;
     padding: 4px 10px !important;
   }
+  .btn-3 {
+    font-size: 12px !important;
+    padding: 4px 10px !important;
+  }
   .remove-btn {
     font-size: 12px !important;
     padding: 4px 10px !important;
@@ -562,6 +619,11 @@ main .list {
   .btn-block .remove-btn {
     font-size: 6px !important;
     padding: 1px 6px !important;
+  }
+  .btn-3 {
+    font-size: 6px !important;
+    padding: 1px 6px !important;
+    margin: 0 !important;
   }
   .remove-btn {
     font-size: 6px !important;
