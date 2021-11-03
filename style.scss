@@ -100,18 +100,28 @@ header {
     justify-content: space-between;
     li {
       padding-bottom: 22px;
+      .nav-sub {
+        border-bottom: 2px #18a7ff solid;
+        padding-bottom: 22px;
+        opacity:1 ;
+      }
+      .nav-back {
+        opacity: 0.6;
+        padding:0;
+        border: none;
+      }
       a {
         color: #d6ddde;
         opacity: 0.6;
         font-size: 16px;
         line-height: 19px;
         font-weight: 400;
+        transition: 0.5s;
       }
       a:hover {
         border-bottom: 2px #18a7ff solid;
         padding-bottom: 22px;
         opacity: 1;
-        transition: 0.5s;
       }
     }
   }

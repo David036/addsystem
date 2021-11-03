@@ -44,7 +44,7 @@ btn1.addEventListener('click',()=>{
         
         let parentUser = document.createElement('div')
         parentUser.classList.add('user-block')
-        mainSection.append(parentUser)
+        parentUserSection.append(parentUser)
         mainSection.append(parentUserSection)
         let parentUserList = document.createElement('ul')
         parentUser.append(parentUserList)
@@ -110,7 +110,6 @@ btn1.addEventListener('click',()=>{
     
         removeBtn.addEventListener('click',() => {
             parentUserSection.remove()
-            parentUser.remove()
             i = 0
         })
     
@@ -200,6 +199,28 @@ btn1.addEventListener('click',()=>{
     })
 
 
+})
+let navSub = document.querySelector('.nav-sub')
+let navOut = document.querySelector('.nav-out')
+let navOff = document.querySelector('.nav-off')
+navOut.addEventListener('click',() => {
+    mainSection.style.display = 'none'
+    navSub.setAttribute('class','nav-back')
+    navOff.setAttribute('class','nav-back')
+    navOut.setAttribute('class','nav-sub')
+
+})
+navOff.addEventListener('click',()=> {
+    navOff.setAttribute('class','nav-sub')
+    mainSection.style.display = 'none'
+    navSub.setAttribute('class','nav-back')
+    navOut.setAttribute('class','nav-back')
+})
+navSub.addEventListener('click',()=> {
+    navOff.setAttribute('class','nav-back')
+    navOut.setAttribute('class','nav-back')
+    mainSection.style.display = 'block'
+    navSub.setAttribute('class','nav-sub')
 })
 
 
