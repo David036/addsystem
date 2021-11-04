@@ -2,7 +2,18 @@ let btn1 = document.querySelector('.btn-1')
 let btn2 = document.querySelector('.btn-2')
 let mainSection = document.querySelector('.main')
 
-
+let userName = prompt('Please your name')
+let userAge = prompt('Please your age')
+let cardName = document.querySelector('.card-name')
+cardName.innerHTML = userName
+let cardAge = document.querySelector('.card-age')
+cardAge.innerHTML = userAge
+let cardBlock = document.querySelector('.card-block')
+// let cardLic = document.querySelector('.card-lic')
+// cardLic.innerHTML = 0
+// if (userName == 0 || userAge == 0) {
+//     alert('Empty,please enter the details.')
+// }
 
 
 btn1.addEventListener('click',()=>{
@@ -43,9 +54,12 @@ btn1.addEventListener('click',()=>{
         parentUserSection.classList.add('parent-user-section')
         
         let parentUser = document.createElement('div')
+        let userSection = document.createElement('div')
+        userSection.classList.add('main')
+        mainSection.append(userSection)
         parentUser.classList.add('user-block')
-        parentUserSection.append(parentUser)
-        mainSection.append(parentUserSection)
+        userSection.append(parentUser)
+        userSection.append(parentUserSection)
         let parentUserList = document.createElement('ul')
         parentUser.append(parentUserList)
         let vector = document.createElement('div')
@@ -71,7 +85,6 @@ btn1.addEventListener('click',()=>{
         listId.innerHTML = inputId.value
         listDate.innerHTML = '28.Oct.2021'
             listActive.innerHTML = i
-            
             
         let btnBlock = document.createElement('div')
         parentUser.append(btnBlock)
@@ -100,21 +113,16 @@ btn1.addEventListener('click',()=>{
         let listNav22 = document.createElement('li')
         listNav2.append(listNav22)
         listNav22.innerHTML = 'Expires'
-
         vector.addEventListener('click',()=>{
             vector1.classList.toggle('vector-rotate-1')
             vector2.classList.toggle('vector-rotate-2')
             parentUserSection.classList.toggle('section-hide')
             
         })
-    
         removeBtn.addEventListener('click',() => {
-            parentUserSection.remove()
+            userSection.remove()
             i = 0
         })
-    
-        
-        
         btn3.addEventListener('click',()=> {
             let addSection2 = document.createElement('div')
             document.body.append(addSection2)
@@ -168,7 +176,6 @@ btn1.addEventListener('click',()=>{
                 
                     i++
                     listActive.innerHTML = i
-                    
     
     
                 removeBtn2.addEventListener('click',()=> {
@@ -176,7 +183,6 @@ btn1.addEventListener('click',()=>{
                     listNav2.remove()
                     i--
                     listActive.innerHTML = i
-                    
                 })
     
     
@@ -208,19 +214,21 @@ navOut.addEventListener('click',() => {
     navSub.setAttribute('class','nav-back')
     navOff.setAttribute('class','nav-back')
     navOut.setAttribute('class','nav-sub')
-
+    cardBlock.style.display = 'none'
 })
 navOff.addEventListener('click',()=> {
     navOff.setAttribute('class','nav-sub')
     mainSection.style.display = 'none'
     navSub.setAttribute('class','nav-back')
     navOut.setAttribute('class','nav-back')
+    cardBlock.style.display = 'flex'
 })
 navSub.addEventListener('click',()=> {
     navOff.setAttribute('class','nav-back')
     navOut.setAttribute('class','nav-back')
     mainSection.style.display = 'block'
     navSub.setAttribute('class','nav-sub')
+    cardBlock.style.display = 'none'
 })
 
 

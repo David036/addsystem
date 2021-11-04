@@ -7,6 +7,47 @@
   list-style: none;
   font-family: "Roboto", sans-serif;
 }
+
+.card-block {
+  margin: 0 auto;
+  max-width: 500px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .card-infos {
+    display: flex;
+    max-width: 300px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .card-info-1 {
+    font-size: 16px;
+      color: #d6ddde;
+      opacity: 0.6;
+    li{
+      
+      margin-bottom: 15px;
+      
+    }
+    
+  }
+  .card-info-2 {
+    li{
+      font-size: 16px;
+      color: #d6ddde;
+      margin-bottom: 15px;
+      text-align: center;
+      
+    }
+  }
+  i {
+    font-size: 130px;
+    color: #d6ddde;
+  }
+  
+}
 header {
   max-width: 1000px;
   display: flex;
@@ -118,10 +159,10 @@ header {
         font-weight: 400;
         transition: 0.5s;
       }
-      a:hover {
+      a:hover {   
+        opacity: 1;
         border-bottom: 2px #18a7ff solid;
         padding-bottom: 22px;
-        opacity: 1;
       }
     }
   }
@@ -129,6 +170,7 @@ header {
 main {
   max-width: 1000px;
   margin: 0 auto;
+  // display: none;
   .user-block {
     max-width: 1000px;
     margin: 0 auto 8px auto;

@@ -9,6 +9,55 @@
   font-family: "Roboto", sans-serif;
 }
 
+.card-block {
+  margin: 0 auto;
+  max-width: 500px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.card-block .card-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-block .card-info-1 {
+  font-size: 16px;
+  color: #d6ddde;
+  opacity: 0.6;
+}
+
+.card-block .card-info-1 li {
+  margin-bottom: 15px;
+}
+
+.card-block .card-info-2 li {
+  font-size: 16px;
+  color: #d6ddde;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card-block i {
+  font-size: 130px;
+  color: #d6ddde;
+}
+
 header {
   max-width: 1000px;
   display: -webkit-box;
@@ -156,9 +205,9 @@ header nav .btn-1:hover {
 }
 
 .nav-section .nav-menu li a:hover {
+  opacity: 1;
   border-bottom: 2px #18a7ff solid;
   padding-bottom: 22px;
-  opacity: 1;
 }
 
 main {
